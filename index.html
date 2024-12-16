@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi novia?</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hola, mi niña</h1>
+        <p>Desde hace tiempo quería decirte algo importante...</p>
+        <h2>¿Quieres ser mi novia? ❤️</h2>
+        <div class="buttons">
+            <button class="yes-button" onclick="response('¡Sabía que dirías que sí! 😊')">Sí</button>
+            <button class="no-button" onclick="response('¡No te preocupes, aún así me sigues gustando! 😅')">No</button>
+        </div>
+        <p id="message"></p>
+    </div>
+    <script>
+        function response(message) {
+            document.getElementById('message').innerText = message;
+        }
+    </script>
+</body>
+</html>
